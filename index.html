@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NFT Conversion Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>NFT Conversion Dashboard</h1>
+    <form enctype="multipart/form-data" id="upload-form">
+        <input type="file" id="file-input" name="file" accept=".png, .jpg, .jpeg, .glb">
+        <input type="text" id="nft-name" placeholder="NFT Name">
+        <input type="text" id="nft-description" placeholder="NFT Description">
+        <input type="text" id="wallet-address" placeholder="Wallet Address">
+        <button type="button" id="convert-button">Convert to NFT</button>
+    </form>
+    
+    <div id="response">
+        <pre></pre>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
