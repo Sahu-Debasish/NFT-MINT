@@ -9,28 +9,65 @@ h1 {
 
 form {
     margin-top: 20px;
+    transition: transform 0.2s ease-in-out;
+}
+
+form:hover {
+    transform: scale(1.02);
 }
 
 input {
     margin: 5px;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #835050;
     border-radius: 5px;
+    transition: border 0.2s ease-in-out;
+}
+
+input:hover {
+    border: 1px solid #007BFF;
 }
 
 button {
     background-color: #007BFF;
-    color: #fff;
+    color: #6ad16f;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
 button:hover {
     background-color: #0056b3;
 }
 
-#response {
-    margin-top: 20px;
+button:active {
+    transform: scale(0.95);
 }
+
+.response {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+#response-text {
+    white-space: pre-wrap;
+    text-align: left;
+    max-height: 300px;
+    overflow: auto;
+}
+/* ... Your existing CSS styles ... */
+
+.box {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    margin-top: 20px;
+    text-align: left;
+}
+
